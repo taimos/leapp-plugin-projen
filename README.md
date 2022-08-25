@@ -3,5 +3,5 @@
 ## Usage
 
 ```bash
-npx projen new --from @taimos/leapp-plugin-projen
+npx projen new --from @taimos/projen-leapp-plugin
 ```
