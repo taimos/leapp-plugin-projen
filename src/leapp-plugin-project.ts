@@ -31,7 +31,7 @@ export class LeappPluginProject extends typescript.TypeScriptProject {
       ],
       deps: [
         '@noovolari/leapp-core',
-        ...options.devDeps ?? [],
+        ...options.deps ?? [],
       ],
       sampleCode: false,
     });
@@ -71,7 +71,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
