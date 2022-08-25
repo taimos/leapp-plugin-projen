@@ -21,11 +21,9 @@ export class LeappPluginProject extends typescript.TypeScriptProject {
 
   constructor(options: LeappPluginProjectOptions) {
     super({
-      docgen: true,
       ...options,
       keywords: ['leapp-plugin', ...options.keywords ?? []],
       devDeps: [
-        'ts-node',
         'ts-loader',
         'webpack',
         'webpack-cli',
